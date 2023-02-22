@@ -102,4 +102,9 @@ contract P2PInsurance {
         );
         payable(owner).transfer(poolBalance);
     }
+
+    // define function to get the count of policyholders
+    function getPolicyholderCount() public view returns (uint256) {
+        return policyholders.length;
+    }
 }
